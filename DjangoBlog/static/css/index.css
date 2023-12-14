@@ -56,7 +56,6 @@ strong{
     color: #FF0066;
 }
 #body-wrap {
-    padding-top: 80px;
     position: relative;
     display: box;
     display: flex;
@@ -97,6 +96,7 @@ main {
 }
 
 #content-outer {
+    padding-top: 80px;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -o-box-flex: 1;
@@ -114,7 +114,8 @@ h1 {
     -webkit-box-align: start;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 0 5px;
+    /*padding: 0 80px;*/
+    padding-top: 180px !important;
     max-width: 1400px;
 }
 

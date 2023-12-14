@@ -1,0 +1,21 @@
+.items{
+    display: flex;
+    flex-direction: column;
+}
+
+.items .card_item{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.items .card_item .title{
+
+}
+
+.items .card_item .title a {
+
+}

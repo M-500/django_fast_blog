@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+{% load  static %}
+<!DOCTYPE html>
 <html lang="zh">
 
 <head>
@@ -10,7 +11,8 @@
     <meta name="keywords" content="Java,Spring,个人博客，微信小程序，博客">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog_page.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -121,82 +123,20 @@
                 </div>
                 <article id="page">
                     <div class="article-container">
-                        <h2>音乐</h2>
+                        {% block content %}
 
-                        <h2>技能</h2>
-                        <div class="skillbox">
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 75%">
-                                    <span>Java</span>
-                                </div>
-                                <div class="skill-bar-percent">75%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 40%">
-                                    <span>前端</span>
-                                </div>
-                                <div class="skill-bar-percent">40%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 60%">
-                                    <span>Spring</span>
-                                </div>
-                                <div class="skill-bar-percent">60%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 70%">
-                                    <span>SpringMVC</span>
-                                </div>
-                                <div class="skill-bar-percent">70%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 80%">
-                                    <span>SpringBoot</span>
-                                </div>
-                                <div class="skill-bar-percent">80%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 60%">
-                                    <span>Mybatis</span>
-                                </div>
-                                <div class="skill-bar-percent">60%</div>
-                            </div>
-                            <div class="skillbar">
-                                <div class="skillbar-title"
-                                    style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 75%">
-                                    <span>数据结构与算法</span>
-                                </div>
-                                <div class="skill-bar-percent">75%</div>
-                            </div>
-                        </div>
+        {% endblock %}
 
-                        <hr>
-                        <h2>刷题</h2>
-                        <div class="tool">
-                            <a href="https://leetcode-cn.com/problemset/all/" target="_blank">Leetcode</a><br>
-                            <a href="https://www.nowcoder.com/ta/coding-interviews" target="_blank">剑指 Offer</a>
-                        </div>
-
-                        <hr>
-                        <h2>收藏</h2>
-                        <div class="tool">
-                            <a href="http://tooool.org/" target="_blank" rel="noopener noreferrer">程序员导航、</a>
-                            <a href="https://adzhp.cn/" target="_blank" rel="noopener noreferrer">爱达杂货铺、</a>
-                            <a href="http://ifeve.com/" target="_blank" rel="noopener noreferrer">并发编程网</a>
-                        </div>
                     </div>
                 </article>
             </div>
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <div class="copyright">&copy;2019 - 2021 BY Bucaicai</div>
+                <p>
+            网站内容均是收集整理自网络,作为学习交流使用,请勿用于商业用途并在24小时内删除,如有侵权,请发邮件至1978992154@qq.com,将立即删除相关资源</p>
+        <p>
+                <div class="copyright">&copy; 2023 Your Django App. All rights reserved.</div>
             </div>
         </footer>
     </div>
