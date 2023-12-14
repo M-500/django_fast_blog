@@ -56,6 +56,7 @@ strong{
     color: #FF0066;
 }
 #body-wrap {
+    padding-top: 80px;
     position: relative;
     display: box;
     display: flex;
